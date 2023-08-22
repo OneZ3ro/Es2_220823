@@ -6,6 +6,7 @@ const p = document.querySelector("#preText");
 const spanMin = document.querySelector("#minuti");
 const spanSec = document.querySelector("#secondi");
 const spanMill = document.querySelector("#mill");
+const stopwatch = document.querySelector("#stopwatch");
 let mins = 0;
 let secs = 0;
 let mills = 0;
@@ -14,7 +15,6 @@ let interval = null;
 const takeInput = () => {
   let text = input.value;
   localStorage.setItem("textInput", text);
-  console.log(text);
 };
 
 const removeInput = () => {
@@ -63,6 +63,8 @@ const counter = () => {
   if (mins > 9) {
     spanMin.innerText = mins;
   }
+
+  const counterNow = sessionStorage.setItem("time", stopwatch.innerText);
 };
 
 window.addEventListener("DOMContentLoaded", () => {
