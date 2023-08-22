@@ -13,38 +13,49 @@
   </head>
 
   <body>
-    <main class="container-fluid mt-4">
-      <h1 class="mb-4">Es 2 (unità 2) Settima Settimana</h1>
-      <p id="preText"></p>
+    <header class="container-fluid mt-4">
+      <h1 class="m-0">Es 2 (unità 2) Settima Settimana</h1>
+    </header>
+    <main class="container-fluid d-flex flex-column gap-3">
+      <div>
+        <p id="preText"></p>
 
-      <form class="d-flex align-items-end gap-3">
-        <div>
-          <label for="exampleInputEmail1" class="form-label">Nome</label>
-          <input
-            type="text"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            placeholder="Inserisci il tuo nome"
-          />
-        </div>
-        <button
-          type="submit"
-          class="btn btn-primary"
-          style="height: fit-content"
-          id="btn-1"
-        >
-          Submit
-        </button>
-        <button
-          type="submit"
-          class="btn btn-primary"
-          style="height: fit-content"
-          id="btn-2"
-        >
-          Remove
-        </button>
-      </form>
+        <form class="d-flex align-items-end gap-3">
+          <div>
+            <label for="exampleInputEmail1" class="form-label">Nome</label>
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Inserisci il tuo nome"
+            />
+          </div>
+          <button
+            type="submit"
+            class="btn btn-primary"
+            style="height: fit-content"
+            id="btn-1"
+          >
+            Submit
+          </button>
+          <button
+            type="submit"
+            class="btn btn-primary"
+            style="height: fit-content"
+            id="btn-2"
+          >
+            Remove
+          </button>
+        </form>
+      </div>
+      <div>
+        <p>
+          Tempo passato in questa pagina:
+          <span id="minuti">00</span> : <span id="secondi">00</span> :
+          <span id="mill">00</span>
+        </p>
+      </div>
     </main>
 
     <script
